@@ -1,0 +1,39 @@
+\documentclass[fancy]{ottercv}
+%%% use 'massive', 'fancy' or 'basic' as otterCV options
+%%% use 'german' for German dates, names etc.
+
+%%% CONTACT DETAILS
+\name{SK. Yeasin Ahsanullah}{Al-Galib}
+\adress{7/4, Islamia Road, West Tutpara}{9100-Khulna, BD}
+\email{syaagalib@nubtkhulna.ac.bd}
+% \website{syaagalib.me}
+\phone{880}{1946 303020}
+\born[Khulna]{2003-4-17}
+% \pathtopicture[size=40mm]{static/profile.png}
+\pathtopicture[size=40mm]{static/otter.jpg}
+
+%%% SIGNATURE
+\pathtosignature[xshift=3mm, yshift=-5mm]{static/signature.png}
+\city{Riverside}
+
+%%% GEOMETRY
+% \usepackage[]{showframe}
+
+\begin{document}
+
+\input{letters/cover}
+\signature[name=true, date=false, hspace=1cm, vspace=10mm]
+\listofattachments
+
+\maketitle
+\input{cv/profile}
+\signature[hspace=1cm, vspace=5mm]
+
+\attachment[header=true]{\en{Motivational letter}\de{Motivationsschreiben}}
+\input{letters/motivation}
+
+\attachment{\de{Zeugnis}\en{School certificate}}
+\includepdf{attachments/certificate}
+
+\end{document}
+
